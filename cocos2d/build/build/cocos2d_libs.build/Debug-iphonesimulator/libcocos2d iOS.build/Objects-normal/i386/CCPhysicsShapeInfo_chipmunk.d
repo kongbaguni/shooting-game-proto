@@ -1,0 +1,29 @@
+dependencies: \
+  /Users/seochangyul/Dev/project/shootinggamePrototype/cocos2d/cocos/physics/chipmunk/CCPhysicsShapeInfo_chipmunk.cpp \
+  /Users/seochangyul/Dev/project/shootinggamePrototype/cocos2d/cocos/physics/chipmunk/CCPhysicsShapeInfo_chipmunk.h \
+  /Users/seochangyul/Dev/project/shootinggamePrototype/cocos2d/build/../cocos/base/ccConfig.h \
+  /Users/seochangyul/Dev/project/shootinggamePrototype/cocos2d/build/../cocos/platform/CCPlatformConfig.h \
+  /Users/seochangyul/Dev/project/shootinggamePrototype/cocos2d/build/../cocos/platform/CCPlatformMacros.h \
+  /Users/seochangyul/Dev/project/shootinggamePrototype/cocos2d/build/../cocos/platform/CCPlatformDefine.h \
+  /Users/seochangyul/Dev/project/shootinggamePrototype/cocos2d/build/../cocos/platform/ios/CCPlatformDefine-ios.h \
+  /Users/seochangyul/Dev/project/shootinggamePrototype/cocos2d/build/../external/chipmunk/include/chipmunk/chipmunk.h \
+  /Users/seochangyul/Dev/project/shootinggamePrototype/cocos2d/build/../external/chipmunk/include/chipmunk/chipmunk_types.h \
+  /Users/seochangyul/Dev/project/shootinggamePrototype/cocos2d/build/../external/chipmunk/include/chipmunk/cpVect.h \
+  /Users/seochangyul/Dev/project/shootinggamePrototype/cocos2d/build/../external/chipmunk/include/chipmunk/cpBB.h \
+  /Users/seochangyul/Dev/project/shootinggamePrototype/cocos2d/build/../external/chipmunk/include/chipmunk/cpSpatialIndex.h \
+  /Users/seochangyul/Dev/project/shootinggamePrototype/cocos2d/build/../external/chipmunk/include/chipmunk/cpBody.h \
+  /Users/seochangyul/Dev/project/shootinggamePrototype/cocos2d/build/../external/chipmunk/include/chipmunk/cpShape.h \
+  /Users/seochangyul/Dev/project/shootinggamePrototype/cocos2d/build/../external/chipmunk/include/chipmunk/cpPolyShape.h \
+  /Users/seochangyul/Dev/project/shootinggamePrototype/cocos2d/build/../external/chipmunk/include/chipmunk/cpArbiter.h \
+  /Users/seochangyul/Dev/project/shootinggamePrototype/cocos2d/build/../external/chipmunk/include/chipmunk/constraints/cpConstraint.h \
+  /Users/seochangyul/Dev/project/shootinggamePrototype/cocos2d/build/../external/chipmunk/include/chipmunk/constraints/cpPinJoint.h \
+  /Users/seochangyul/Dev/project/shootinggamePrototype/cocos2d/build/../external/chipmunk/include/chipmunk/constraints/cpSlideJoint.h \
+  /Users/seochangyul/Dev/project/shootinggamePrototype/cocos2d/build/../external/chipmunk/include/chipmunk/constraints/cpPivotJoint.h \
+  /Users/seochangyul/Dev/project/shootinggamePrototype/cocos2d/build/../external/chipmunk/include/chipmunk/constraints/cpGrooveJoint.h \
+  /Users/seochangyul/Dev/project/shootinggamePrototype/cocos2d/build/../external/chipmunk/include/chipmunk/constraints/cpDampedSpring.h \
+  /Users/seochangyul/Dev/project/shootinggamePrototype/cocos2d/build/../external/chipmunk/include/chipmunk/constraints/cpDampedRotarySpring.h \
+  /Users/seochangyul/Dev/project/shootinggamePrototype/cocos2d/build/../external/chipmunk/include/chipmunk/constraints/cpRotaryLimitJoint.h \
+  /Users/seochangyul/Dev/project/shootinggamePrototype/cocos2d/build/../external/chipmunk/include/chipmunk/constraints/cpRatchetJoint.h \
+  /Users/seochangyul/Dev/project/shootinggamePrototype/cocos2d/build/../external/chipmunk/include/chipmunk/constraints/cpGearJoint.h \
+  /Users/seochangyul/Dev/project/shootinggamePrototype/cocos2d/build/../external/chipmunk/include/chipmunk/constraints/cpSimpleMotor.h \
+  /Users/seochangyul/Dev/project/shootinggamePrototype/cocos2d/build/../external/chipmunk/include/chipmunk/cpSpace.h

@@ -1,0 +1,28 @@
+dependencies: \
+  /Users/seochangyul/Dev/project/shootinggamePrototype/cocos2d/external/Box2D/Dynamics/Joints/b2Joint.cpp \
+  /Users/seochangyul/Dev/project/shootinggamePrototype/cocos2d/build/../external/Box2D/Dynamics/Joints/b2Joint.h \
+  /Users/seochangyul/Dev/project/shootinggamePrototype/cocos2d/build/../external/Box2D/Common/b2Math.h \
+  /Users/seochangyul/Dev/project/shootinggamePrototype/cocos2d/build/../external/Box2D/Common/b2Settings.h \
+  /Users/seochangyul/Dev/project/shootinggamePrototype/cocos2d/build/../external/Box2D/Dynamics/Joints/b2DistanceJoint.h \
+  /Users/seochangyul/Dev/project/shootinggamePrototype/cocos2d/build/../external/Box2D/Dynamics/Joints/b2WheelJoint.h \
+  /Users/seochangyul/Dev/project/shootinggamePrototype/cocos2d/build/../external/Box2D/Dynamics/Joints/b2MouseJoint.h \
+  /Users/seochangyul/Dev/project/shootinggamePrototype/cocos2d/build/../external/Box2D/Dynamics/Joints/b2RevoluteJoint.h \
+  /Users/seochangyul/Dev/project/shootinggamePrototype/cocos2d/build/../external/Box2D/Dynamics/Joints/b2PrismaticJoint.h \
+  /Users/seochangyul/Dev/project/shootinggamePrototype/cocos2d/build/../external/Box2D/Dynamics/Joints/b2PulleyJoint.h \
+  /Users/seochangyul/Dev/project/shootinggamePrototype/cocos2d/build/../external/Box2D/Dynamics/Joints/b2GearJoint.h \
+  /Users/seochangyul/Dev/project/shootinggamePrototype/cocos2d/build/../external/Box2D/Dynamics/Joints/b2WeldJoint.h \
+  /Users/seochangyul/Dev/project/shootinggamePrototype/cocos2d/build/../external/Box2D/Dynamics/Joints/b2FrictionJoint.h \
+  /Users/seochangyul/Dev/project/shootinggamePrototype/cocos2d/build/../external/Box2D/Dynamics/Joints/b2RopeJoint.h \
+  /Users/seochangyul/Dev/project/shootinggamePrototype/cocos2d/build/../external/Box2D/Dynamics/Joints/b2MotorJoint.h \
+  /Users/seochangyul/Dev/project/shootinggamePrototype/cocos2d/build/../external/Box2D/Dynamics/b2Body.h \
+  /Users/seochangyul/Dev/project/shootinggamePrototype/cocos2d/build/../external/Box2D/Collision/Shapes/b2Shape.h \
+  /Users/seochangyul/Dev/project/shootinggamePrototype/cocos2d/build/../external/Box2D/Common/b2BlockAllocator.h \
+  /Users/seochangyul/Dev/project/shootinggamePrototype/cocos2d/build/../external/Box2D/Collision/b2Collision.h \
+  /Users/seochangyul/Dev/project/shootinggamePrototype/cocos2d/build/../external/Box2D/Dynamics/b2World.h \
+  /Users/seochangyul/Dev/project/shootinggamePrototype/cocos2d/build/../external/Box2D/Common/b2StackAllocator.h \
+  /Users/seochangyul/Dev/project/shootinggamePrototype/cocos2d/build/../external/Box2D/Dynamics/b2ContactManager.h \
+  /Users/seochangyul/Dev/project/shootinggamePrototype/cocos2d/build/../external/Box2D/Collision/b2BroadPhase.h \
+  /Users/seochangyul/Dev/project/shootinggamePrototype/cocos2d/build/../external/Box2D/Collision/b2DynamicTree.h \
+  /Users/seochangyul/Dev/project/shootinggamePrototype/cocos2d/build/../external/Box2D/Common/b2GrowableStack.h \
+  /Users/seochangyul/Dev/project/shootinggamePrototype/cocos2d/build/../external/Box2D/Dynamics/b2WorldCallbacks.h \
+  /Users/seochangyul/Dev/project/shootinggamePrototype/cocos2d/build/../external/Box2D/Dynamics/b2TimeStep.h
