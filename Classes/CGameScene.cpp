@@ -17,6 +17,9 @@ bool CGameScene::init()
     }
     Size winsize = Director::getInstance()->getWinSize();
     
+    auto bg = LayerColor::create(Color4B(255,255,255,255));
+    addChild(bg);
+    
     std::string fileName = CUtil::getHDSDname("texturePacker/unit%s.plist");
     
     SpriteFrameCache::getInstance()->addSpriteFramesWithFile(fileName);

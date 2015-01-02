@@ -31,14 +31,10 @@ bool AppDelegate::applicationDidFinishLaunching() {
         glview = GLViewImpl::create("cocio");
         director->setOpenGLView(glview);
     }
-//    glview->setFrameSize(1920, 1280);
+    glview->setDesignResolutionSize(960, 640, ResolutionPolicy::FIXED_HEIGHT);
     
     bool bHD = CUtil::isHD();
-    if(bHD)
-    {
-        glview->setDesignResolutionSize(960, 640, ResolutionPolicy::FIXED_HEIGHT);
-    }
-    else
+    if(!bHD)
     {
         glview->setDesignResolutionSize(320, 480, ResolutionPolicy::FIXED_HEIGHT);
     }
