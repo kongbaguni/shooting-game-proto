@@ -13,6 +13,18 @@
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		1E7DD5E21A4EB78300F2989B /* tilemap in Resources */ = {isa = PBXBuildFile; fileRef = 1E7DD5E11A4EB78300F2989B /* tilemap */; };
 		1E7DD5E31A4EB78300F2989B /* tilemap in Resources */ = {isa = PBXBuildFile; fileRef = 1E7DD5E11A4EB78300F2989B /* tilemap */; };
+		1EF706FB1A5673AF00E8E09C /* CPlayerSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EF706F91A5673AF00E8E09C /* CPlayerSprite.cpp */; };
+		1EF706FC1A5673AF00E8E09C /* CPlayerSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EF706F91A5673AF00E8E09C /* CPlayerSprite.cpp */; };
+		1EF706FE1A5675F000E8E09C /* texturePacker in Resources */ = {isa = PBXBuildFile; fileRef = 1EF706FD1A5675F000E8E09C /* texturePacker */; };
+		1EF706FF1A5675F000E8E09C /* texturePacker in Resources */ = {isa = PBXBuildFile; fileRef = 1EF706FD1A5675F000E8E09C /* texturePacker */; };
+		1EF707021A5676C300E8E09C /* CAnimationHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EF707001A5676C300E8E09C /* CAnimationHelper.cpp */; };
+		1EF707031A5676C300E8E09C /* CAnimationHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EF707001A5676C300E8E09C /* CAnimationHelper.cpp */; };
+		1EF707061A56824900E8E09C /* CTitleScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EF707041A56824900E8E09C /* CTitleScene.cpp */; };
+		1EF707071A56824900E8E09C /* CTitleScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EF707041A56824900E8E09C /* CTitleScene.cpp */; };
+		1EF7070A1A5684E700E8E09C /* CUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EF707081A5684E700E8E09C /* CUtil.cpp */; };
+		1EF7070B1A5684E700E8E09C /* CUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EF707081A5684E700E8E09C /* CUtil.cpp */; };
+		1EF7070E1A56AD2D00E8E09C /* CGameScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EF7070C1A56AD2D00E8E09C /* CGameScene.cpp */; };
+		1EF7070F1A56AD2D00E8E09C /* CGameScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EF7070C1A56AD2D00E8E09C /* CGameScene.cpp */; };
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
 		3EACC98F19EE6D4300EB3C5E /* res in Resources */ = {isa = PBXBuildFile; fileRef = 3EACC98E19EE6D4300EB3C5E /* res */; };
 		3EACC99019EE6D4300EB3C5E /* res in Resources */ = {isa = PBXBuildFile; fileRef = 3EACC98E19EE6D4300EB3C5E /* res */; };
@@ -24,8 +36,6 @@
 		46880B8219C43A67006E1F66 /* HelloWorld.png in Resources */ = {isa = PBXBuildFile; fileRef = 46880B7A19C43A67006E1F66 /* HelloWorld.png */; };
 		46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 46880B8419C43A87006E1F66 /* AppDelegate.cpp */; };
 		46880B8919C43A87006E1F66 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 46880B8419C43A87006E1F66 /* AppDelegate.cpp */; };
-		46880B8A19C43A87006E1F66 /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 46880B8619C43A87006E1F66 /* HelloWorldScene.cpp */; };
-		46880B8B19C43A87006E1F66 /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 46880B8619C43A87006E1F66 /* HelloWorldScene.cpp */; };
 		503AE0F817EB97AB00D1A890 /* Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 503AE0F617EB97AB00D1A890 /* Icon.icns */; };
 		503AE10017EB989F00D1A890 /* AppController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 503AE0FB17EB989F00D1A890 /* AppController.mm */; };
 		503AE10117EB989F00D1A890 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 503AE0FC17EB989F00D1A890 /* main.m */; };
@@ -108,6 +118,17 @@
 		1D6058910D05DD3D006BFB54 /* shootinggamePrototype iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "shootinggamePrototype iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1E7DD5E11A4EB78300F2989B /* tilemap */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tilemap; sourceTree = "<group>"; };
+		1EF706F91A5673AF00E8E09C /* CPlayerSprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CPlayerSprite.cpp; sourceTree = "<group>"; };
+		1EF706FA1A5673AF00E8E09C /* CPlayerSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPlayerSprite.h; sourceTree = "<group>"; };
+		1EF706FD1A5675F000E8E09C /* texturePacker */ = {isa = PBXFileReference; lastKnownFileType = folder; path = texturePacker; sourceTree = "<group>"; };
+		1EF707001A5676C300E8E09C /* CAnimationHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CAnimationHelper.cpp; sourceTree = "<group>"; };
+		1EF707011A5676C300E8E09C /* CAnimationHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAnimationHelper.h; sourceTree = "<group>"; };
+		1EF707041A56824900E8E09C /* CTitleScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CTitleScene.cpp; sourceTree = "<group>"; };
+		1EF707051A56824900E8E09C /* CTitleScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTitleScene.h; sourceTree = "<group>"; };
+		1EF707081A5684E700E8E09C /* CUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CUtil.cpp; sourceTree = "<group>"; };
+		1EF707091A5684E700E8E09C /* CUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CUtil.h; sourceTree = "<group>"; };
+		1EF7070C1A56AD2D00E8E09C /* CGameScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CGameScene.cpp; sourceTree = "<group>"; };
+		1EF7070D1A56AD2D00E8E09C /* CGameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGameScene.h; sourceTree = "<group>"; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		3EACC98E19EE6D4300EB3C5E /* res */ = {isa = PBXFileReference; lastKnownFileType = folder; path = res; sourceTree = "<group>"; };
 		46880B7619C43A67006E1F66 /* CloseNormal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CloseNormal.png; sourceTree = "<group>"; };
@@ -115,8 +136,6 @@
 		46880B7A19C43A67006E1F66 /* HelloWorld.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HelloWorld.png; sourceTree = "<group>"; };
 		46880B8419C43A87006E1F66 /* AppDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AppDelegate.cpp; sourceTree = "<group>"; };
 		46880B8519C43A87006E1F66 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		46880B8619C43A87006E1F66 /* HelloWorldScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HelloWorldScene.cpp; sourceTree = "<group>"; };
-		46880B8719C43A87006E1F66 /* HelloWorldScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloWorldScene.h; sourceTree = "<group>"; };
 		503AE0F617EB97AB00D1A890 /* Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Icon.icns; sourceTree = "<group>"; };
 		503AE0F717EB97AB00D1A890 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		503AE0FA17EB989F00D1A890 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppController.h; path = ios/AppController.h; sourceTree = SOURCE_ROOT; };
@@ -273,6 +292,7 @@
 		46880B7519C43A67006E1F66 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1EF706FD1A5675F000E8E09C /* texturePacker */,
 				1E7DD5E11A4EB78300F2989B /* tilemap */,
 				521A8EA819F11F5000D177D7 /* fonts */,
 				3EACC98E19EE6D4300EB3C5E /* res */,
@@ -289,8 +309,16 @@
 			children = (
 				46880B8419C43A87006E1F66 /* AppDelegate.cpp */,
 				46880B8519C43A87006E1F66 /* AppDelegate.h */,
-				46880B8619C43A87006E1F66 /* HelloWorldScene.cpp */,
-				46880B8719C43A87006E1F66 /* HelloWorldScene.h */,
+				1EF706F91A5673AF00E8E09C /* CPlayerSprite.cpp */,
+				1EF706FA1A5673AF00E8E09C /* CPlayerSprite.h */,
+				1EF707001A5676C300E8E09C /* CAnimationHelper.cpp */,
+				1EF707011A5676C300E8E09C /* CAnimationHelper.h */,
+				1EF707041A56824900E8E09C /* CTitleScene.cpp */,
+				1EF707051A56824900E8E09C /* CTitleScene.h */,
+				1EF707081A5684E700E8E09C /* CUtil.cpp */,
+				1EF707091A5684E700E8E09C /* CUtil.h */,
+				1EF7070C1A56AD2D00E8E09C /* CGameScene.cpp */,
+				1EF7070D1A56AD2D00E8E09C /* CGameScene.h */,
 			);
 			name = Classes;
 			path = ../Classes;
@@ -443,6 +471,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EF706FE1A5675F000E8E09C /* texturePacker in Resources */,
 				5087E78117EB970100C73F5D /* Icon-120.png in Resources */,
 				5087E78617EB970100C73F5D /* Icon-76.png in Resources */,
 				5087E77F17EB970100C73F5D /* Default@2x.png in Resources */,
@@ -478,6 +507,7 @@
 				503AE0F817EB97AB00D1A890 /* Icon.icns in Resources */,
 				3EACC99019EE6D4300EB3C5E /* res in Resources */,
 				521A8EAA19F11F5000D177D7 /* fonts in Resources */,
+				1EF706FF1A5675F000E8E09C /* texturePacker in Resources */,
 				46880B7C19C43A67006E1F66 /* CloseNormal.png in Resources */,
 				1E7DD5E31A4EB78300F2989B /* tilemap in Resources */,
 				46880B7E19C43A67006E1F66 /* CloseSelected.png in Resources */,
@@ -492,10 +522,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */,
-				46880B8A19C43A87006E1F66 /* HelloWorldScene.cpp in Sources */,
+				1EF707021A5676C300E8E09C /* CAnimationHelper.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
+				1EF7070E1A56AD2D00E8E09C /* CGameScene.cpp in Sources */,
+				1EF7070A1A5684E700E8E09C /* CUtil.cpp in Sources */,
+				1EF706FB1A5673AF00E8E09C /* CPlayerSprite.cpp in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
+				1EF707061A56824900E8E09C /* CTitleScene.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,9 +537,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EF7070F1A56AD2D00E8E09C /* CGameScene.cpp in Sources */,
 				46880B8919C43A87006E1F66 /* AppDelegate.cpp in Sources */,
+				1EF706FC1A5673AF00E8E09C /* CPlayerSprite.cpp in Sources */,
+				1EF707071A56824900E8E09C /* CTitleScene.cpp in Sources */,
+				1EF707031A5676C300E8E09C /* CAnimationHelper.cpp in Sources */,
 				503AE10517EB98FF00D1A890 /* main.cpp in Sources */,
-				46880B8B19C43A87006E1F66 /* HelloWorldScene.cpp in Sources */,
+				1EF7070B1A5684E700E8E09C /* CUtil.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

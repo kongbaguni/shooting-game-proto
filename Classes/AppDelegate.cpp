@@ -1,5 +1,6 @@
 #include "AppDelegate.h"
-#include "HelloWorldScene.h"
+#include "CTitleScene.h"
+#include "CUtil.h"
 
 USING_NS_CC;
 
@@ -27,8 +28,19 @@ bool AppDelegate::applicationDidFinishLaunching() {
     auto director = Director::getInstance();
     auto glview = director->getOpenGLView();
     if(!glview) {
-        glview = GLViewImpl::create("My Game");
+        glview = GLViewImpl::create("cocio");
         director->setOpenGLView(glview);
+    }
+//    glview->setFrameSize(1920, 1280);
+    
+    bool bHD = CUtil::isHD();
+    if(bHD)
+    {
+        glview->setDesignResolutionSize(960, 640, ResolutionPolicy::FIXED_HEIGHT);
+    }
+    else
+    {
+        glview->setDesignResolutionSize(320, 480, ResolutionPolicy::FIXED_HEIGHT);
     }
 
     // turn on display FPS
@@ -38,7 +50,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
     director->setAnimationInterval(1.0 / 60);
 
     // create a scene. it's an autorelease object
-    auto scene = HelloWorld::createScene();
+    auto scene = CTitleScene::create();
 
     // run
     director->runWithScene(scene);
