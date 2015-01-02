@@ -28,7 +28,7 @@
                 <key>scale</key>
                 <double>0.5</double>
                 <key>extension</key>
-                <string></string>
+                <string>-sd</string>
                 <key>spriteFilter</key>
                 <string></string>
                 <key>acceptFractionalValues</key>
