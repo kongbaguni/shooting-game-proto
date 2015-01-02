@@ -25,6 +25,7 @@
 		1EF7070B1A5684E700E8E09C /* CUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EF707081A5684E700E8E09C /* CUtil.cpp */; };
 		1EF7070E1A56AD2D00E8E09C /* CGameScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EF7070C1A56AD2D00E8E09C /* CGameScene.cpp */; };
 		1EF7070F1A56AD2D00E8E09C /* CGameScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EF7070C1A56AD2D00E8E09C /* CGameScene.cpp */; };
+		1EF707131A56F04400E8E09C /* CGameManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EF707111A56F04400E8E09C /* CGameManager.cpp */; };
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
 		3EACC98F19EE6D4300EB3C5E /* res in Resources */ = {isa = PBXBuildFile; fileRef = 3EACC98E19EE6D4300EB3C5E /* res */; };
 		3EACC99019EE6D4300EB3C5E /* res in Resources */ = {isa = PBXBuildFile; fileRef = 3EACC98E19EE6D4300EB3C5E /* res */; };
@@ -129,6 +130,8 @@
 		1EF707091A5684E700E8E09C /* CUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CUtil.h; sourceTree = "<group>"; };
 		1EF7070C1A56AD2D00E8E09C /* CGameScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CGameScene.cpp; sourceTree = "<group>"; };
 		1EF7070D1A56AD2D00E8E09C /* CGameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGameScene.h; sourceTree = "<group>"; };
+		1EF707111A56F04400E8E09C /* CGameManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CGameManager.cpp; sourceTree = "<group>"; };
+		1EF707121A56F04400E8E09C /* CGameManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGameManager.h; sourceTree = "<group>"; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		3EACC98E19EE6D4300EB3C5E /* res */ = {isa = PBXFileReference; lastKnownFileType = folder; path = res; sourceTree = "<group>"; };
 		46880B7619C43A67006E1F66 /* CloseNormal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CloseNormal.png; sourceTree = "<group>"; };
@@ -319,6 +322,8 @@
 				1EF707091A5684E700E8E09C /* CUtil.h */,
 				1EF7070C1A56AD2D00E8E09C /* CGameScene.cpp */,
 				1EF7070D1A56AD2D00E8E09C /* CGameScene.h */,
+				1EF707111A56F04400E8E09C /* CGameManager.cpp */,
+				1EF707121A56F04400E8E09C /* CGameManager.h */,
 			);
 			name = Classes;
 			path = ../Classes;
@@ -524,6 +529,7 @@
 				46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */,
 				1EF707021A5676C300E8E09C /* CAnimationHelper.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
+				1EF707131A56F04400E8E09C /* CGameManager.cpp in Sources */,
 				1EF7070E1A56AD2D00E8E09C /* CGameScene.cpp in Sources */,
 				1EF7070A1A5684E700E8E09C /* CUtil.cpp in Sources */,
 				1EF706FB1A5673AF00E8E09C /* CPlayerSprite.cpp in Sources */,

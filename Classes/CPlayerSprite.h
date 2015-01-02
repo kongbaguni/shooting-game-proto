@@ -16,13 +16,24 @@ USING_NS_CC;
 class CPlayerSprite : public Node
 {
 public:
+    enum class actionTag
+    {
+        STAND,
+        JUMP,
+        ACTION_MAX
+    };
+    
     virtual bool init();
     CREATE_FUNC(CPlayerSprite);
+    void standAction();
+    void jumpAction();
 protected:
     CPlayerSprite(void);
     virtual ~CPlayerSprite(void);
     virtual void update(float dt);
-    CC_SYNTHESIZE_RETAIN(Sprite*, m_pSprite, Sprite);
+    CC_SYNTHESIZE_RETAIN(Sprite*, _pSprite, Sprite);
+    CC_SYNTHESIZE_RETAIN(Label*, _pLabel, Label);
 };
+
 
 #endif /* defined(__shootinggamePrototype__CPlayerSprite__) */

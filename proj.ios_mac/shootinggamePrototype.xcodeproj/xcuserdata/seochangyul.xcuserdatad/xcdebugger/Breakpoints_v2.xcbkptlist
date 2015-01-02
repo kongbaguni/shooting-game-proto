@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../Classes/CAnimationHelper.cpp"
-            timestampString = "441893711.577235"
+            timestampString = "441901524.70927"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
             landmarkName = "CAnimationHelper::addAnimation(std::string frameFormat, const int iStartFrame, const int iEndFrame, std::string animationName)"
             landmarkType = "5">
          </BreakpointContent>
@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../Classes/CAnimationHelper.cpp"
-            timestampString = "441893553.926567"
+            timestampString = "441901524.70927"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "47"
-            endingLineNumber = "47"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
             landmarkName = "CAnimationHelper::addAnimation(std::string frameFormat, const int iStartFrame, const int iEndFrame, std::string animationName)"
             landmarkType = "5">
          </BreakpointContent>
@@ -54,32 +54,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "../Classes/CUtil.cpp"
-            timestampString = "441894512.648137"
+            filePath = "../Classes/CPlayerSprite.cpp"
+            timestampString = "441912201.895885"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
-            landmarkName = "CUtil::getHDSD()"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../Classes/CUtil.cpp"
-            timestampString = "441895459.217361"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "15"
-            endingLineNumber = "15"
-            landmarkName = "CUtil::isHD()"
+            startingLineNumber = "91"
+            endingLineNumber = "91"
+            landmarkName = "CPlayerSprite::update(float dt)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

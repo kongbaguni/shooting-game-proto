@@ -9,6 +9,8 @@
 #include "CGameScene.h"
 #include "CPlayerSprite.h"
 #include "CUtil.h"
+#include "CGameManager.h"
+
 bool CGameScene::init()
 {
     if(!Scene::init())
@@ -17,8 +19,20 @@ bool CGameScene::init()
     }
     Size winsize = Director::getInstance()->getWinSize();
     
-    auto bg = LayerColor::create(Color4B(255,255,255,255));
+    float fRotate = 90.0f;
+    
+    auto bg = Layer::create();
+    bg->setRotation3D(Vec3(-fRotate, 0, 0));
+    bg->setPosition(Vec2(0.0f,winsize.height/2.0f));
+    
+    for (const auto& child : bg->getChildren())
+    {
+        static_cast<SpriteBatchNode*>(child)->getTexture()->setAntiAliasTexParameters();
+    }
     addChild(bg);
+
+    addChild(CGameManager::getInstance());
+    
     
     std::string fileName = CUtil::getHDSDname("texturePacker/unit%s.plist");
     
@@ -26,8 +40,9 @@ bool CGameScene::init()
 
     
     auto player = CPlayerSprite::create();
-    player->setPosition(winsize.width/2,winsize.height/2);
-    addChild(player);
+    player->setPosition(winsize.width/2,winsize.height/3);
+    player->setRotation3D(Vec3(fRotate, 0, 0));
+    bg->addChild(player);
     
     
     return true;
