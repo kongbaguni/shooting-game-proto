@@ -49,6 +49,7 @@ bool CGameScene::init()
     auto player = CPlayerSprite::create();
     player->setPosition(winsize.width/2,10);
     bg->addChild(player);
+    CGameManager::getInstance()->setPlayerSprite(player);
     
     
     return true;

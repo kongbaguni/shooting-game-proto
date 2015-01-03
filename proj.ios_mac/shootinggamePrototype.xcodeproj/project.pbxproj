@@ -11,6 +11,9 @@
 		1AC6FB30180E99EB004C840B /* libcocos2d iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC6FB07180E9839004C840B /* libcocos2d iOS.a */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		1E7192EC1A5827C3008B9765 /* CGameManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EF707111A56F04400E8E09C /* CGameManager.cpp */; };
+		1E7192EE1A58281F008B9765 /* particle in Resources */ = {isa = PBXBuildFile; fileRef = 1E7192ED1A58281F008B9765 /* particle */; };
+		1E7192EF1A58281F008B9765 /* particle in Resources */ = {isa = PBXBuildFile; fileRef = 1E7192ED1A58281F008B9765 /* particle */; };
 		1E7DD5E21A4EB78300F2989B /* tilemap in Resources */ = {isa = PBXBuildFile; fileRef = 1E7DD5E11A4EB78300F2989B /* tilemap */; };
 		1E7DD5E31A4EB78300F2989B /* tilemap in Resources */ = {isa = PBXBuildFile; fileRef = 1E7DD5E11A4EB78300F2989B /* tilemap */; };
 		1EF706FB1A5673AF00E8E09C /* CPlayerSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EF706F91A5673AF00E8E09C /* CPlayerSprite.cpp */; };
@@ -118,6 +121,7 @@
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D6058910D05DD3D006BFB54 /* shootinggamePrototype iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "shootinggamePrototype iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1E7192ED1A58281F008B9765 /* particle */ = {isa = PBXFileReference; lastKnownFileType = folder; path = particle; sourceTree = "<group>"; };
 		1E7DD5E11A4EB78300F2989B /* tilemap */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tilemap; sourceTree = "<group>"; };
 		1EF706F91A5673AF00E8E09C /* CPlayerSprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CPlayerSprite.cpp; sourceTree = "<group>"; };
 		1EF706FA1A5673AF00E8E09C /* CPlayerSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPlayerSprite.h; sourceTree = "<group>"; };
@@ -295,6 +299,7 @@
 		46880B7519C43A67006E1F66 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1E7192ED1A58281F008B9765 /* particle */,
 				1EF706FD1A5675F000E8E09C /* texturePacker */,
 				1E7DD5E11A4EB78300F2989B /* tilemap */,
 				521A8EA819F11F5000D177D7 /* fonts */,
@@ -488,6 +493,7 @@
 				5087E77D17EB970100C73F5D /* Default-568h@2x.png in Resources */,
 				5087E78517EB970100C73F5D /* Icon-72.png in Resources */,
 				521A8E6519F0C34300D177D7 /* Default-736h@3x.png in Resources */,
+				1E7192EE1A58281F008B9765 /* particle in Resources */,
 				521A8EA919F11F5000D177D7 /* fonts in Resources */,
 				50EF62A317ECD613001EB2F8 /* Icon-50.png in Resources */,
 				5087E78017EB970100C73F5D /* Icon-114.png in Resources */,
@@ -510,6 +516,7 @@
 			files = (
 				46880B8219C43A67006E1F66 /* HelloWorld.png in Resources */,
 				503AE0F817EB97AB00D1A890 /* Icon.icns in Resources */,
+				1E7192EF1A58281F008B9765 /* particle in Resources */,
 				3EACC99019EE6D4300EB3C5E /* res in Resources */,
 				521A8EAA19F11F5000D177D7 /* fonts in Resources */,
 				1EF706FF1A5675F000E8E09C /* texturePacker in Resources */,
@@ -544,6 +551,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1EF7070F1A56AD2D00E8E09C /* CGameScene.cpp in Sources */,
+				1E7192EC1A5827C3008B9765 /* CGameManager.cpp in Sources */,
 				46880B8919C43A87006E1F66 /* AppDelegate.cpp in Sources */,
 				1EF706FC1A5673AF00E8E09C /* CPlayerSprite.cpp in Sources */,
 				1EF707071A56824900E8E09C /* CTitleScene.cpp in Sources */,

@@ -11,6 +11,8 @@
 
 #include <stdio.h>
 #include "cocos2d.h"
+#include "CPlayerSprite.h"
+#include <map>
 USING_NS_CC;
 class CGameManager : public Layer
 {
@@ -26,8 +28,18 @@ private:
     virtual void onTouchEnded(Touch *touch, Event *unused_event);
     virtual void onTouchCancelled(Touch *touch, Event *unused_event);
     
+    virtual void onKeyPressed(EventKeyboard::KeyCode keyCode, Event* event);
+    virtual void onKeyReleased(EventKeyboard::KeyCode keyCode, Event* event);
+
+    
     CC_SYNTHESIZE_READONLY(Vec2, _vec2TouchPoint,TouchStartPoint);
     CC_SYNTHESIZE_READONLY(Vec2, _vec2TouchMovement, TouchMovement);
+    
+    CC_SYNTHESIZE_RETAIN(CPlayerSprite*, _pPlayerSprite, PlayerSprite);
+    
+    bool _baArrowPress[4];
+    
+    void scheduleStopMovement(float dt);
     
     
 };

@@ -124,23 +124,22 @@ void CPlayerSprite::update(float dt)
     
     Size winsize = Director::getInstance()->getWinSize();
     Size mapSize = CSetting::getinstance()->getTileMap()->getContentSize();
-    const Vec2 movement = CGameManager::getInstance()->getTouchMovement();
+    Vec2 movement = CGameManager::getInstance()->getTouchMovement();
     Vec2 prePos = pos+movement;
-    if(prePos.y>winsize.height/2-10.0f
-       | prePos.y<-mapSize.height/2
-       | prePos.x<0
-       | prePos.x>mapSize.width
-       )
+    float fPadding = 30.0f;
+    const bool bROUT_TOP = prePos.y>mapSize.height/2-fPadding;
+    const bool bROUT_BOTTOM = prePos.y<-mapSize.height/2+fPadding;
+    const bool bROUT_LEFT = prePos.x<fPadding;
+    const bool bROUT_RIGHT = prePos.x>mapSize.width-fPadding;
+    if(bROUT_TOP | bROUT_BOTTOM)
     {
-        return;
+        movement.y*=-1;
     }
-    
-        
-    this->setPosition(this->getPosition()+movement);
-    getParent()->setPositionX(getParent()->getPositionX()-movement.x);
-    
-    
-    if(movement.x<0)
+    else if(bROUT_LEFT | bROUT_RIGHT)
+    {
+        movement.x*=-1;
+    }
+    else if(movement.x<0)
     {
         _pSprite->setFlippedX(false);
     }
@@ -148,15 +147,16 @@ void CPlayerSprite::update(float dt)
     {
         _pSprite->setFlippedX(true);
     }
+    
+    this->setPosition(this->getPosition()+movement);
+    getParent()->setPositionX(getParent()->getPositionX()-movement.x);
+    
+    
+
     _pParticle->setPosition(getPosition());
     if(_pParticle->getParent()==NULL)
     {
         getParent()->addChild(_pParticle);
-    }
-
-    if(rand()%300==0)
-    {
-        jumpAction();
     }
     
     
