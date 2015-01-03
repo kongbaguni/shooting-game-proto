@@ -127,9 +127,9 @@ void CPlayerSprite::update(float dt)
     const Vec2 movement = CGameManager::getInstance()->getTouchMovement();
     Vec2 prePos = pos+movement;
     if(prePos.y>winsize.height/2-10.0f
-       | prePos.y<-winsize.height/3
+       | prePos.y<-mapSize.height/2
        | prePos.x<0
-       | prePos.x>mapSize.width/2
+       | prePos.x>mapSize.width
        )
     {
         return;

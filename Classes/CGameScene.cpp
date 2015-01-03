@@ -23,7 +23,7 @@ bool CGameScene::init()
     auto bg = Layer::create();
     Vec3 r = CUtil::getRotate3D();
     bg->setRotation3D(Vec3(-r.x, 0, 0));
-    bg->setPosition(Vec2(0.0f,150.0f));
+    bg->setPosition(Vec2(0.0f, 200.0f));
     addChild(bg);
     
 //    타일맵 초기화
@@ -35,7 +35,7 @@ bool CGameScene::init()
     {
         static_cast<SpriteBatchNode*>(child)->getTexture()->setAntiAliasTexParameters();
     }
-    tileMap->setPosition3D(Vec3(0.0f, -winsize.height, 0.0f));
+    tileMap->setPosition3D(Vec3(0.0f, -tileMap->getContentSize().height/2, 0.0f));
     bg->addChild(tileMap);
     
 //    게임매니져 붙이기
