@@ -15,10 +15,24 @@ USING_NS_CC;
 class CUtil
 {
 public:
+    
     static bool isHD();
     static std::string getHDSD();
     static std::string getHDSDname(std::string nameFormat);
+    static Vec3 getRotate3D();
 };
+
+class CSetting
+{
+public:
+    static CSetting* getinstance();
+private:
+    CSetting();
+    virtual ~CSetting();
+    CC_SYNTHESIZE_RETAIN(TMXTiledMap*, _pTileMap, TileMap);
+};
+
+
 
 
 #endif /* defined(__shootinggamePrototype__CUtil__) */

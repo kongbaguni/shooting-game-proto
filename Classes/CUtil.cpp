@@ -32,3 +32,30 @@ std::string CUtil::getHDSDname(std::string nameFormat)
     auto str = String::createWithFormat(nameFormat.c_str(),getHDSD().c_str());
     return str->_string;
 }
+
+Vec3 CUtil::getRotate3D()
+{
+    return Vec3(90.0f, 0.0f, 0.0f);
+}
+
+
+CSetting* CSetting::getinstance()
+{
+    static CSetting* instance = NULL;
+    if(instance==NULL)
+    {
+        instance = new CSetting();
+    }
+    return instance;
+}
+
+CSetting::CSetting() :
+_pTileMap(NULL)
+{
+    
+}
+
+CSetting::~CSetting()
+{
+    CC_SAFE_RELEASE_NULL(_pTileMap);
+}

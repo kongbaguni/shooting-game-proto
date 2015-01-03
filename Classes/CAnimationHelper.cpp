@@ -74,7 +74,7 @@ void CAnimationHelper::addAnimation
     }
     else if(iStartFrame>iEndFrame)
     {
-        for(int i=iEndFrame; i>=iStartFrame; i--)
+        for(int i=iStartFrame; i>=iEndFrame; i--)
         {
             auto string = String::createWithFormat(frameFormat.c_str(),i);
             frameList.push_back(string->_string);

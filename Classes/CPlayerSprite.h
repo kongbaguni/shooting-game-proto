@@ -24,6 +24,7 @@ public:
     };
     
     virtual bool init();
+    
     CREATE_FUNC(CPlayerSprite);
     void standAction();
     void jumpAction();
@@ -33,6 +34,8 @@ protected:
     virtual void update(float dt);
     CC_SYNTHESIZE_RETAIN(Sprite*, _pSprite, Sprite);
     CC_SYNTHESIZE_RETAIN(Label*, _pLabel, Label);
+    CC_SYNTHESIZE_RETAIN(ParticleSystemQuad*, _pParticle, Particle);
+    CC_SYNTHESIZE_READONLY(int, _iJumpCount, JumpCount);
 };
 
 

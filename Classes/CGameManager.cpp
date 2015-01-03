@@ -20,6 +20,7 @@ _vec2TouchMovement(Vec2(0.0f,0.0f))
     
     EventDispatcher* dispatcher = Director::getInstance()->getEventDispatcher();
     dispatcher->addEventListenerWithSceneGraphPriority(touchListner, this);
+    
 }
 CGameManager::~CGameManager()
 {
