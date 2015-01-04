@@ -16,6 +16,8 @@
 		1E7192EF1A58281F008B9765 /* particle in Resources */ = {isa = PBXBuildFile; fileRef = 1E7192ED1A58281F008B9765 /* particle */; };
 		1E7DD5E21A4EB78300F2989B /* tilemap in Resources */ = {isa = PBXBuildFile; fileRef = 1E7DD5E11A4EB78300F2989B /* tilemap */; };
 		1E7DD5E31A4EB78300F2989B /* tilemap in Resources */ = {isa = PBXBuildFile; fileRef = 1E7DD5E11A4EB78300F2989B /* tilemap */; };
+		1EF3A7891A58E79D0076FEC9 /* BGM in Resources */ = {isa = PBXBuildFile; fileRef = 1EF3A7881A58E79D0076FEC9 /* BGM */; };
+		1EF3A78A1A58E79D0076FEC9 /* BGM in Resources */ = {isa = PBXBuildFile; fileRef = 1EF3A7881A58E79D0076FEC9 /* BGM */; };
 		1EF706FB1A5673AF00E8E09C /* CPlayerSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EF706F91A5673AF00E8E09C /* CPlayerSprite.cpp */; };
 		1EF706FC1A5673AF00E8E09C /* CPlayerSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EF706F91A5673AF00E8E09C /* CPlayerSprite.cpp */; };
 		1EF706FE1A5675F000E8E09C /* texturePacker in Resources */ = {isa = PBXBuildFile; fileRef = 1EF706FD1A5675F000E8E09C /* texturePacker */; };
@@ -123,6 +125,7 @@
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1E7192ED1A58281F008B9765 /* particle */ = {isa = PBXFileReference; lastKnownFileType = folder; path = particle; sourceTree = "<group>"; };
 		1E7DD5E11A4EB78300F2989B /* tilemap */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tilemap; sourceTree = "<group>"; };
+		1EF3A7881A58E79D0076FEC9 /* BGM */ = {isa = PBXFileReference; lastKnownFileType = folder; path = BGM; sourceTree = "<group>"; };
 		1EF706F91A5673AF00E8E09C /* CPlayerSprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CPlayerSprite.cpp; sourceTree = "<group>"; };
 		1EF706FA1A5673AF00E8E09C /* CPlayerSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPlayerSprite.h; sourceTree = "<group>"; };
 		1EF706FD1A5675F000E8E09C /* texturePacker */ = {isa = PBXFileReference; lastKnownFileType = folder; path = texturePacker; sourceTree = "<group>"; };
@@ -299,6 +302,7 @@
 		46880B7519C43A67006E1F66 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1EF3A7881A58E79D0076FEC9 /* BGM */,
 				1E7192ED1A58281F008B9765 /* particle */,
 				1EF706FD1A5675F000E8E09C /* texturePacker */,
 				1E7DD5E11A4EB78300F2989B /* tilemap */,
@@ -481,6 +485,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EF3A7891A58E79D0076FEC9 /* BGM in Resources */,
 				1EF706FE1A5675F000E8E09C /* texturePacker in Resources */,
 				5087E78117EB970100C73F5D /* Icon-120.png in Resources */,
 				5087E78617EB970100C73F5D /* Icon-76.png in Resources */,
@@ -517,6 +522,7 @@
 				46880B8219C43A67006E1F66 /* HelloWorld.png in Resources */,
 				503AE0F817EB97AB00D1A890 /* Icon.icns in Resources */,
 				1E7192EF1A58281F008B9765 /* particle in Resources */,
+				1EF3A78A1A58E79D0076FEC9 /* BGM in Resources */,
 				3EACC99019EE6D4300EB3C5E /* res in Resources */,
 				521A8EAA19F11F5000D177D7 /* fonts in Resources */,
 				1EF706FF1A5675F000E8E09C /* texturePacker in Resources */,

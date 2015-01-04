@@ -11,7 +11,9 @@
 
 #include <stdio.h>
 #include "cocos2d.h"
+#include <SimpleAudioEngine.h>
 USING_NS_CC;
+using namespace CocosDenshion;
 class CUtil
 {
 public:
@@ -20,17 +22,12 @@ public:
     static std::string getHDSD();
     static std::string getHDSDname(std::string nameFormat);
     static Vec3 getRotate3D();
+    
+    static void setTMXTileMapAntialias(TMXTiledMap* tileMap);
+    static Vec2 getCoordWithVec2(TMXTiledMap* tileMap, Vec2 vec);
 };
 
-class CSetting
-{
-public:
-    static CSetting* getinstance();
-private:
-    CSetting();
-    virtual ~CSetting();
-    CC_SYNTHESIZE_RETAIN(TMXTiledMap*, _pTileMap, TileMap);
-};
+
 
 
 

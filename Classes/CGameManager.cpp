@@ -10,6 +10,7 @@
 CGameManager::CGameManager():
 _vec2TouchPoint(Vec2(0.0f,0.0f)),
 _vec2TouchMovement(Vec2(0.0f,0.0f)),
+_pTileMap(NULL),
 _pPlayerSprite(NULL)
 {
     EventDispatcher* dispatcher = Director::getInstance()->getEventDispatcher();
@@ -42,6 +43,7 @@ _pPlayerSprite(NULL)
 CGameManager::~CGameManager()
 {
     CC_SAFE_RELEASE_NULL(_pPlayerSprite);
+    CC_SAFE_RELEASE_NULL(_pTileMap);
     
 }
 

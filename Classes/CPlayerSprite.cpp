@@ -80,6 +80,7 @@ void CPlayerSprite::jumpAction()
        (_pSprite->getPositionY()<80 || _pSprite->getPositionY()>110)
        )
     {
+        _iJumpCount++;
         return;
     }
     if(_iJumpCount>=2)
@@ -123,7 +124,7 @@ void CPlayerSprite::update(float dt)
     _pLabel->setString(String::createWithFormat("%0.2f : %0.2f",pos.x, pos.y)->_string);
     
     Size winsize = Director::getInstance()->getWinSize();
-    Size mapSize = CSetting::getinstance()->getTileMap()->getContentSize();
+    Size mapSize = CGameManager::getInstance()->getTileMap()->getContentSize();
     Vec2 movement = CGameManager::getInstance()->getTouchMovement();
     Vec2 prePos = pos+movement;
     float fPadding = 30.0f;
@@ -148,16 +149,67 @@ void CPlayerSprite::update(float dt)
         _pSprite->setFlippedX(true);
     }
     
-    this->setPosition(this->getPosition()+movement);
-    getParent()->setPositionX(getParent()->getPositionX()-movement.x);
-    
+    //타일맵하고 충돌검사
+    if(movement!=Vec2(0,0))
+    {
+        auto tileMap = CGameManager::getInstance()->getTileMap();
+        Vec2 fixPos = CUtil::getCoordWithVec2(tileMap, prePos);
+        
+        TMXLayer* layer = CGameManager::getInstance()->getTileMap()->getLayer("bg");
+        
+        uint32_t iGid = layer->getTileGIDAt(fixPos);
+        auto value = tileMap->getPropertiesForGID(iGid);
+        if(value.getType()==Value::Type::MAP)
+        {
+            ValueMap valueMap = value.asValueMap();
+            std::string key = "wall";
+            ValueMap::const_iterator w = valueMap.find(key);
+            if(w!=valueMap.end())
+            {
+                if(fabsf(movement.x)>0)
+                {
+                    movement.x = 0;
+                }
+                if(fabsf(movement.y)>0)
+                {
+                    movement.y = 0;
+                }
+                    
+            }
+        }
+
+        Vec2 fixPosNow = CUtil::getCoordWithVec2(tileMap, getPosition());
+        auto tile = layer->getTileAt(fixPosNow);
+        tile->runAction
+        (Sequence::create
+         (FadeTo::create(0.5f, 30),
+          FadeTo::create(0.5f, 255),
+          NULL)
+         );
+        
+        auto tile2 = layer->getTileAt(fixPos);
+        tile2->runAction
+        (Sequence::create
+         (ScaleTo::create(0.5f, 0.1f),
+          ScaleTo::create(0.5f, 1.0f),
+          NULL)
+         );
+        
+    }
     
 
-    _pParticle->setPosition(getPosition());
+
+    //케릭터 이동
+    this->setPosition(this->getPosition()+movement);
+    //배경 스크롤
+    getParent()->setPositionX(getParent()->getPositionX()-movement.x);
+
+    //파티클 이동
     if(_pParticle->getParent()==NULL)
     {
         getParent()->addChild(_pParticle);
     }
+    _pParticle->setPosition(getPosition());
     
     
 }

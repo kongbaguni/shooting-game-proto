@@ -9,6 +9,9 @@
 #include "CTitleScene.h"
 #include "CGameScene.h"
 #include "CUtil.h"
+#include <SimpleAudioEngine.h>
+using namespace CocosDenshion;
+
 bool CTitleScene::init()
 {
     if(!Scene::init())
@@ -32,6 +35,10 @@ bool CTitleScene::init()
     
     schedule(schedule_selector(CTitleScene::changeScene), 3.0f);
     
+    SimpleAudioEngine::getInstance()->preloadBackgroundMusic("BGM/01 A Night Of Dizzy Spells.mp3");
+    
+    
+
     
     return true;
 }

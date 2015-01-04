@@ -39,23 +39,24 @@ Vec3 CUtil::getRotate3D()
 }
 
 
-CSetting* CSetting::getinstance()
+void CUtil::setTMXTileMapAntialias(cocos2d::TMXTiledMap *tileMap)
 {
-    static CSetting* instance = NULL;
-    if(instance==NULL)
+    for (const auto& child : tileMap->getChildren())
     {
-        instance = new CSetting();
+        static_cast<SpriteBatchNode*>(child)->getTexture()->setAntiAliasTexParameters();
     }
-    return instance;
 }
 
-CSetting::CSetting() :
-_pTileMap(NULL)
+Vec2 CUtil::getCoordWithVec2(cocos2d::TMXTiledMap *tileMap, cocos2d::Vec2 vec)
 {
+    vec.y+=tileMap->getContentSize().height/2;
+    Size size = tileMap->getContentSize();
+    Size tileSzie = tileMap->getTileSize();
+//    int iX = size.width/tileSzie.width;
+    int iY = size.height/tileSzie.height;
     
-}
-
-CSetting::~CSetting()
-{
-    CC_SAFE_RELEASE_NULL(_pTileMap);
+    int iXx = vec.x / tileSzie.width;
+    int iYy = vec.y / tileSzie.height;
+    
+    return Vec2(iXx,iY-iYy-1);
 }
